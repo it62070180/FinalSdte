@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+
+    stages{
+        stage('Pull code') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Download dependency') {
+            steps {
+                dir("FinalSdte"){
+                    dir("backend"){
+                        sh 'npm install'   
+                    }   
+                }
+            }
+        }
+    }
+}
