@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send("Server running la")
+  res.send("Server running")
 })
 
 app.get('/test', async(req, res) => {

@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  backend:
+    image: siwakorn62070180/backend:1.0.0
+    build: ./backend
+  frontend:
+    image: siwakorn62070180/frontend:1.0.0
+    build: ./frontend
